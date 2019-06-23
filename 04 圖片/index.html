@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>04圖片</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- RWD圖片 -->
+        <picture>
+            <!-- >=992的圖片 -->
+            <source srcset="/images/03bb019e57ed99ba4a712c2253db509f.jpg" media="(min-width:992px)">
+            <!-- >=576的圖片 -->
+            <source srcset="/images/3e80f3cefc0728859240b7022ef5dfb9.jpg" media="(min-width:576px)">
+            <!-- 上面都不成立的圖片 -->
+            <img src="/images/5jz0B7z.gif" alt="" srcset="">
+        </picture>
+        <hr>
+
+        <!-- 圖片對齊 -->
+        <!-- rounded 圓角效果 -->
+        <!-- clearfix 清除float的bug -->
+        <!-- mx-auto 應該是margin left & right 的auto -->
+        <!-- d-block = display:block -->
+        <div class="clearfix" style="border: 1px solid #F00;">
+            <img src="/images/03bb019e57ed99ba4a712c2253db509f.jpg" alt="" class="rounded float-left w-25">
+            <img src="/images/0a5e26776e9346237944ca1ac393421e.jpg" alt="" class="rounded float-right w-25">
+        </div>
+
+        <div style="border: 1px solid #F00;">
+            <img src="/images/3e80f3cefc0728859240b7022ef5dfb9.jpg" alt="" class="rounded d-block mx-auto w-50">
+        </div>
+        <!-- <div class="text-center" style="border: 1px solid #F00;">
+                <img src="images/sm.jpg" alt="" class="rounded">
+            </div> -->
+        <hr>
+
+        <!-- img-fluid , img-thumbnail -->
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="/images/キュビ - こんにち殺法～! (74896065) .jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="/images/Arden - どーんだ YO！ (74195140) .png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-thumbnail" src="/images/書記gif.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
