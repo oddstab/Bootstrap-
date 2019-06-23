@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- mh-100 & mw-100 最大高度跟最大寬度100%-->
+        <div class="bg-danger" style="width:200px;height:200px;">
+            <div class="bg-primary mw-100 mh-100" style="width:300px;height:300px;"></div>
+        </div>
+        <hr>
+
+        <!-- h-[n] 高度%數 -->
+        <div class="border border-danger" style="height:100px;">
+            <div class="d-inline-block bg-primary h-25">高度 25%</div>
+            <div class="d-inline-block bg-secondary h-50">高度 50%</div>
+            <div class="d-inline-block bg-success h-75">高度 75%</div>
+            <div class="d-inline-block bg-info h-100">高度 100%</div>
+        </div>
+        <hr>
+
+        <!-- w-[n] 寬度%數 -->
+        <div class="border border-danger">
+            <p class="bg-primary w-25">d</p>
+            <p class="bg-primary w-50">d</p>
+            <p class="bg-primary w-75">d</p>
+            <p class="bg-primary w-100">d</p>
+        </div>
+        <hr>
+
+        <!-- 對齊 -->
+        <table class="table table-bordered" style="height: 100px">
+            <tr>
+                <td>top</td>
+                <td class="align-middle">middle</td>
+                <td class="align-bottom">bottom</td>
+            </tr>
+        </table>
+
+        <!-- 字體 -->
+        <p class="font-weight-bold">我是粗體ㄛ</p>
+        <p class="font-weight-normal">我hen普通</p>
+        <p class="font-weight-light">我變瘦了</p>
+        <p class="font-italic">我是斜體啦</p>
+        <p>This is in monospace. 我等寬了?</p>
+        <p class="text-monospace">This is in monospace. 我是等寬??</p>
+
+
+        <hr>
+
+        <!-- 大小寫轉換 -->
+        <!-- text-capitalize 首字大寫-->
+        <p class="text-lowercase">ABCABC</p>
+        <p class="text-uppercase">abcabc</p>
+        <p class="text-capitalize">aBcDeFg</p>
+        <hr>
+
+        <!-- text-truncate 太多字的話就用三個點替代 (...) -->
+        <!-- text-nowrap 死不換行 -->
+        <div class="border border-danger text-danger text-truncate" style="width: 8rem;">
+            我要不要換行勒勒勒勒勒勒勒勒勒勒
+        </div>
+        <div class="border border-danger text-danger text-nowrap" style="width: 8rem;">
+            我要不要換行勒勒勒勒勒勒勒勒勒勒
+        </div>
+        <hr>
+
+        <!-- 對齊部分 -->
+        <p>我是預設p</p>
+        <p class="text-center">我置中了</p>
+        <p class="text-right">我靠右了</p>
+        <!-- 很多字的話不會出現空白區域 -->
+        <p class="text-justify">(justify)我不會出現空白區域ㄛ Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            et architecto modi, quos in assumenda aut. Reprehenderit, exercitationem nisi earum ullam cum accusamus eos
+            iste amet, sapiente, tempora excepturi adipisci!</p>
+        <p>(default)我可能會出現空白區域ㄛLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores possimus
+            iure molestiae totam ex ab obcaecati corporis unde et, suscipit id porro reprehenderit nam! Ea eius nihil
+            pariatur nesciunt?</p>
+    </div>
+</body>
+
+</html>
