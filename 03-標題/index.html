@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Key 按鍵樣式 -->
+        <p>
+            請按 <kbd>ctrl</kbd>+<kbd>w</kbd> 關閉當前視窗
+        </p>
+
+        <!-- code -->
+        <code>&lt;section&gt; </code>
+        <hr>
+
+        <!-- dt > dt >dd .. -->
+        <dl class="row">
+            <dt class="col-sm-2">姓名</dt>
+            <dd class="col-sm-10">張三</dd>
+            <!-- truncate 讓很長的字變成三個點 (...) -->
+            <dt class="col-sm-2 text-truncate">Luluca just released. She is a great PvE unit. Most mages are offensive
+                oriented but Luluca can play both offense and defense with defense break and defense buff. Add to her
+                high base attack, she can do really well on offense if you built her with mostly attack and critical
+                rate/damage.</dt>
+            <dd class="col-sm-10">露露卡~~!</dd>
+        </dl>
+        <hr>
+
+        <!-- 同行，類似於float -->
+        <ul class="list-inline">
+            <li class="list-inline-item">111</li>
+            <li class="list-inline-item">222</li>
+            <li class="list-inline-item">333</li>
+        </ul>
+        <hr>
+
+        <!-- 列表 -->
+        <ul class="list-unstyled">
+            <!--取消點點-->
+            <li>12345</li>
+            <li>22222</li>
+            <li>33333</li>
+            <li>44444</li>
+            <li>
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+
+        <!-- blockquote & footer 來源註解 -->
+        <blockquote class="blockquote text-right">
+            <!-- mb-0 = margin-bottom:0 -->
+            <p class="mb-0"> Their clothes were not very warm.They had red faces and cold hands.</p>
+            <footer class="blockquote-footer">
+                來源： <cite> 我的OneNote </cite>
+            </footer>
+        </blockquote>
+        <hr>
+
+        <!-- abbr , initislism 轉大寫-->
+        <p>Email</p>
+        <p><abbr title="請輸入email" class="initialism">Email</abbr> </p>
+        <hr>
+
+        <!-- lead -->
+        <p>哈密瓜</p>
+        <p class="lead">蘋果</p>
+        <p>香蕉</p>
+        <!-- 如果還覺得太小可以用display-1，數字越大 字體越小 -->
+        <h1 class="display-1">太大了吧Display1</h1>
+        <h1 class="display-2">太大了吧Display2</h1>
+        <h1 class="display-3">太大了吧Display3</h1>
+        <h1 class="display-4">太大了吧Display4</h1>
+        <!-- 正常的 -->
+        <h1>h1標題是我~<small class="text-muted">我是副標題</small></h1>
+        <h2>h2標題是我~<small class="text-muted">我是副標題</small></h2>
+        <h3>h3標題是我~<small class="text-muted">我是副標題</small></h3>
+        <h4>h4標題是我~<small class="text-muted">我是副標題</small></h4>
+        <h5>h5標題是我~<small class="text-muted">我是副標題</small></h5>
+        <h6>h6標題是我~<small class="text-muted">我是副標題</small></h6>
+    </div>
+</body>
+
+</html>
