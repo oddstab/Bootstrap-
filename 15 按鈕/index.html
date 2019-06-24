@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container pt-3">
+        <p>
+            <button class="btn btn-primary" id="mybtn">提交</button>
+        </p>
+        <button id="btn" class="btn btn-outline-info">狀態切換</button>
+        <hr>
+
+        <!-- radio & checkbox -->
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="checkbox" name="checkbox[]" checked> Java
+            </label>
+            <label class="btn btn-secondary">
+                <input type="checkbox" name="checkbox[]"> PHP
+            </label>
+            <label class="btn btn-secondary">
+                <input type="checkbox" name="checkbox[]"> Python
+            </label>
+        </div>
+
+        <hr>
+
+        <!-- 啟用&禁用狀態 -->
+        <button class="btn btn-primary">提交</button>
+        <button class="btn btn-primary active">提交</button>
+        <button class="btn btn-primary" disabled>提交</button>
+        <a href="#" class="btn btn-primary disabled">提交</a>
+        <hr>
+
+        <!-- 按鈕大小 -->
+        <button class="btn btn-outline-primary btn-lg">我是大按鈕</button>
+        <button class="btn btn-outline-secondary">我是普通按鈕</button>
+        <button class="btn btn-outline-success btn-sm">我是小按鈕</button>
+        <br>
+        <br>
+        <button class="btn btn-outline-info btn-block">我填滿了</button>
+        <hr>
+
+        <!-- 輪廓按鈕 -->
+        <button class="btn btn-outline-primary">Primary</button>
+        <button class="btn btn-outline-secondary">Secondary</button>
+        <button class="btn btn-outline-success">Success</button>
+        <button class="btn btn-outline-danger">Danger</button>
+        <button class="btn btn-outline-warning">Warning</button>
+        <button class="btn btn-outline-info">Info</button>
+        <button class="btn btn-outline-light">Light</button>
+        <button class="btn btn-outline-dark">Dark</button>
+        <hr>
+
+        <!-- 正常按鈕 (填滿) -->
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-link">Link</button>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $('#btn').click(function name() {
+            $('#mybtn').button('toggle')
+        })
+    </script>
+</body>
+
+</html>
